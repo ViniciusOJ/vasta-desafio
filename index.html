@@ -14,21 +14,30 @@
       </div>
       <nav>
         <ul class="list-menu">
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Depoimentos</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
           <li>
             <a href=""> <img src="/assts/search-icon.png" /></a>
           </li>
           <li class="hamburguer">
-            <a href=""><i class="fa-solid fa-bars"></i></a>
+            <i class="fa-solid fa-bars"></i>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section class="first-section">
+    <div class="menu-mobile">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <section class="first-section" id="home">
       <div class="conteudo-principal">
         <h1>TÍTULO BANNER</h1>
 
@@ -38,7 +47,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="sobre">
       <h1>Sobre</h1>
       <div class="page-one">
         <img src="assts/IMAGEM 1.jpg" class="imag" />
@@ -58,14 +67,11 @@
             rerum voluptas ea voluptatum impedit, optio blanditiis eius officia
             excepturi nulla suscipit dolores. Labore est?!
           </p>
-          <button class="btns">Saiba mais</button>
-          <button class="more-info">
-            Ver mais <i class="fa-solid fa-arrow-down-long"></i>
-          </button>
+          <button class="btns" id="btn-show">Saiba mais</button>
         </div>
       </div>
 
-      <div class="page-one">
+      <div class="page-one" id="show">
         <div class="texts-buttons">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint
@@ -89,8 +95,11 @@
         <img src="assts/IMAGEM 2.jpg" class="imag" />
       </div>
     </section>
+    <button class="more-info">
+      Ver mais <i class="fa-solid fa-arrow-down-long"></i>
+    </button>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h1>Portfólio</h1>
       <div class="gallery-container">
         <img src="assts/portfolio-imagem-1.jpg" class="photo" />
@@ -102,7 +111,7 @@
       </div>
     </section>
 
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
       <h1>Depoimentos</h1>
       <div class="geral">
         <i class="fa-solid fa-arrow-left"></i>
@@ -172,7 +181,7 @@
       </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
       <h1>Contato</h1>
       <div class="input-up">
         <input type="text" placeholder="nome" />
@@ -190,8 +199,7 @@
         </div>
       </div>
     </section>
-
-    <footer>
+    <footer id="footer">
       <div class="container-footer">
         <div class="newsletter">
           <img src="./assts/footer_logo_360x.png" class="logo-hidden" />
@@ -235,10 +243,10 @@
             <div class="menu">
               <h1>Menu</h1>
               <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
               </ul>
             </div>
 
@@ -253,13 +261,33 @@
           <img src="assts/footer_logo_360x.png" />
         </div>
         <div class="final">
-          <a href="#">Menu <i class="fa-solid fa-arrow-down-long"></i></a>
+          <button id="icon-menu">
+            Menu <i class="fa-solid fa-arrow-down-long"></i>
+          </button>
+          <div id="footer-menu">
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#depoimentos">Depoimentos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
         </div>
         <div class="final">
-          <a href="#">Sobre <i class="fa-solid fa-arrow-down-long"></i></a>
+          <button id="icon-sobre">
+            Sobre <i class="fa-solid fa-arrow-down-long"></i>
+          </button>
+          <div id="footer-sobre">
+            <ul>
+              <li><a href="#">Politica de Privacidade</a></li>
+              <li><a href="#">Termos de Uso</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/4599e6ebe0.js"
       crossorigin="anonymous"
