@@ -51,11 +51,19 @@ iconSobre.addEventListener("click", () => {
 
 const arrowPrev = document.getElementById("arrowPrev");
 const arrowNext = document.getElementById("arrowNext");
+const div = document.querySelector(".geral");
 
-function slickPrev() {
-  window.scrollBy(100, 0);
+function nextArrow() {
+  div.scrollBy(200, 0);
+}
+function prevArrow() {
+  div.scrollBy(-200, 0);
 }
 
 arrowNext.addEventListener("click", () => {
-  slickPrev();
+  nextArrow();
+});
+
+arrowPrev.addEventListener("click", () => {
+  prevArrow();
 });

@@ -254,7 +254,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: left;
-  overflow-x: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .geral::-webkit-scollbar {
@@ -267,7 +268,6 @@ html {
 
 .cont-depoimento {
   min-width: 20%;
-  height: 10rem;
   background: whitesmoke;
   margin: 0 20px 0 0;
   border-radius: 20px;
