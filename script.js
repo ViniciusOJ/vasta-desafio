@@ -46,3 +46,16 @@ iconSobre.addEventListener("click", () => {
     footerSobre.classList.add("show");
   }
 });
+
+// slider //
+
+const arrowPrev = document.getElementById("arrowPrev");
+const arrowNext = document.getElementById("arrowNext");
+
+function slickPrev() {
+  window.scrollBy(100, 0);
+}
+
+arrowNext.addEventListener("click", () => {
+  slickPrev();
+});
